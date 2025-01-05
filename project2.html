@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 2 - 3D Modeling Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pro2.css">
+    <style>
+        body {
+            background-image: url('pic/Backgrounds/bgt5.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-page">
+        <div class="section-title">
+            <h2>3D Isometric Treasure Room</h2>
+        </div>
+        <div class="project-details">
+            <p>
+                This project is called the 3D Isometric Treasure Model because it uses isometric perspective; this project is also similar to the previous project. 
+                Items in the scene include a wooden table, a wooden barrel, a chest, a sword, and a wooden plank. 
+                The majority of the items were made with default primitives, such as cylinders and cubes. The pieces were shaped and refined using bevel, mirror, and array modifiers 
+                to provide a polished and unified appearance. 
+            </p>
+            
+            <!-- Displaying each project image one by one -->
+            <div class="project-image">
+                <img src="pic/pro2/pro2(1).png" alt="First render of Project 2 showcasing basic structure">
+                <p class="image-description"><h4>BASE MODEL</h4>
+                 This is the base model, which currently lacks color. The objects in the scene were created using default primitives, such as cubes, cylinders, and planes.
+                Cubes: Used to model the table, chair, chest, and sword.
+                Cylinders: Used to create the barrels.
+                Planes: Used for the base floor and the map.
+                Modifiers were employed to enhance the model:
+                Array Modifier: Applied to duplicate objects efficiently along the X, Y, or Z axes.
+                Bevel Modifier: Used to smooth the edges of objects for a refined look.
+                Mirror Modifier: Utilized to mirror objects across the X, Y, or Z axes, ensuring symmetry.
+            </div>
+
+            <div class="project-image">
+                <img src="pic/pro2/pro2(1).png" alt="Project 2 with advanced textures and lighting effects">
+                <p class="image-description"><h4>TEXTURING</h4>
+                    In this image, the coloring of the model is displayed. In Blender, I used the Shader Editor to assign materials and colors to each object. It’s also possible to use the same material for multiple objects to maintain consistency.
+                    Objects can be linked or separated by selecting them and pressing P to create distinct parts within the scene. Additionally, nodes were used to apply textures to various objects, enhancing their realism.
+                    For the torch, I applied an emission shader to make it emit light, contributing to the scene's lighting setup.</p>
+            </div>
+
+            <div class="project-image">
+                <img src="pic/pro2/pro2(3).png" alt="Final render of Project 2 with polished textures and effects">
+                <p class="image-description"><h4>Lighting and Camera Setup</h4>
+                    This image highlights the importance of lighting and camera positioning in enhancing the model's appearance. For lighting, I used both area lights and point lights.
+                    Area Lights: These provide full coverage across the scene, ensuring the models are evenly illuminated.
+                    Point Lights: These are used to fix areas where lighting might not reach or to highlight specific objects. Point lights were also placed on the model's backside to create impressive lighting effects and enhance depth.
+                    To achieve the isometric view, I utilized the Isometric Camera add-on, which helped position the camera at the perfect angle for rendering.</p>
+            </div>
+
+            <div class="project-image">
+                <img src="pic/projects/project2.png" alt="Alternative angle of Project 2">
+                <p class="image-description">The final rendered image captures the model with a vibrant and cartoonish aesthetic. For rendering, I used Cycles to achieve high-quality output, taking full advantage of its powerful rendering capabilities. The render was set to very high contrast to enhance the visual appeal and emphasize the lighting, shadows, and colors. This resulted in a striking, well-lit scene with bold highlights and deep shadows, further enhancing the cartoonish look.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-to-home">Back to Home</a>
+    </div>
+</body>
+</html>

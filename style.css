@@ -1,0 +1,381 @@
+/* General Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Arial', sans-serif;
+   background-color: #121212;
+   color: #fff;
+   background-image: url('pic/Backgrounds/bg.jpg'); /* Replace with your actual image URL */
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+/* Shortcut Navigation */
+.shortcut-nav {
+   display: flex;
+   justify-content: flex-end;
+   background-color: rgba(18, 18, 18, 0.8); /* Slight transparency for readability */
+   padding: 10px 0;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 1000;
+   width: 100%;
+}
+
+.shortcut-nav a {
+   font-size: 18px;
+   color: #fff;
+   text-decoration: none;
+   padding: 10px 16px;
+   margin: 0 10px;
+   transition: .4s ease;
+}
+
+.shortcut-nav a:hover {
+   background-color: #e6683b;
+   border-radius: 5px;
+}
+
+.video-banner {
+   width: 100%;
+   height: 35vh; /* Adjusted height */
+   position: relative;
+   overflow: hidden;
+}
+
+.video-banner video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   animation: smoothVideo 10s linear infinite;
+}
+
+/* Info Section */
+.info {
+   position: absolute;
+   top: 20%;
+   left: 5%;
+   transform: translateY(-50%);
+   color: white;
+   text-align: left;
+   z-index: 10;
+   width: 50%;
+   padding: 20px;
+   background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+   border-radius: 10px;
+}
+
+.info h3 {
+   font-size: 24px;
+   letter-spacing: 1px;
+   color: #ddd;
+}
+
+.info h1 {
+   font-size: 45px;
+   color: #fff;
+}
+
+.info span {
+   color: #e6683b;
+}
+
+.info a {
+   text-decoration: none;
+   color: #fff;
+   background-color: #241f1e;
+   padding: 12px 25px;
+   margin-top: 20px;
+   border-radius: 10px;
+   transition: .4s ease;
+}
+
+.info a:hover {
+   background-color: #3baeD1;
+}
+
+.resume-button a {
+   font-weight: bold;
+   background-color: #e6683b;
+   padding: 10px 20px;
+   border-radius: 5px;
+   margin-top: 20px;
+   display: inline-block;
+   transition: 0.4s ease;
+}
+
+.resume-button a:hover {
+   background-color: #e7e4e1;
+}
+
+.projects-container {
+   background-color: rgba(0, 0, 0, 0.3); /* Transparent black background */
+   padding: 30px 0; /* Adds padding to the section */
+   border-radius: 10px;
+   margin: 0 auto;
+}
+
+.projects-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+}
+
+.project-item {
+   width: 30%; /* Adjusted for better spacing */
+   text-align: center;
+   margin-bottom: 30px;
+   text-decoration: none;
+}
+
+.project-link {
+   display: block;
+   position: relative;
+   overflow: hidden;
+   border-radius: 8px;
+   transition: all 0.4s ease;
+}
+
+/* Image Styling */
+.project-link img {
+   width: 100%;
+   height: 250px; /* Set height for all images */
+   object-fit: cover;
+   border-radius: 8px;
+   transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover Effect for Button Vibe */
+.project-link:hover img {
+   opacity: 0.8;
+   transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+.project-link:hover {
+   background-color: rgba(15, 178, 243, 0.993); /* Add background effect to feel like a button */
+   box-shadow: 0 0 15px rgb(251, 252, 252); /* Glow effect for emphasis */
+}
+
+.project-item h4 {
+   font-size: 18px;
+   color: #f7f1f1;
+   text-align: center;
+   margin-top: 10px;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 1px;
+   -webkit-text-stroke: 1px #f80808; /* Neon Orange outline */
+}
+
+
+/* About and Contact Sections with Same Background Image */
+#about, #contact {
+   padding: 60px 0;
+   background-image: url('pic/Backgrounds/bg1.jpg'); /* Replace with your actual image URL */
+   background-size: cover; /* Ensures the image covers the entire section */
+   background-position: center; /* Centers the background image */
+   color: #ddd;
+   background-attachment: fixed; /* Keeps the image fixed while scrolling */
+   background-blur: 5px; /* Optional: for a slight blur effect */
+}
+
+/* Ensure text stands out over background */
+.about-content, .contact-form {
+   background: rgba(0, 0, 0, 0.6); /* Semi-transparent background to enhance readability */
+   padding: 20px;
+   border-radius: 10px;
+}
+.about-content p {
+   font-size: 18px;
+   line-height: 1.8;
+   text-align: justify;
+   max-width: 800px;
+   margin: auto;
+}
+
+/* Contact Form Text */
+.contact-form p {
+   font-size: 18px;
+   line-height: 1.8;
+   text-align: justify;
+   max-width: 800px;
+   margin: auto;
+}
+
+
+.contact-form a {
+   text-decoration: none;
+   color: #fff;
+   background-color: #e6683b;
+   padding: 12px 20px;
+   border-radius: 10px;
+   transition: .4s ease;
+}
+
+.contact-form a:hover {
+   background-color: #3b95d1;
+}
+
+.contact-icons {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+
+.contact-icons a {
+   text-decoration: none;
+   color: #fff;
+   margin: 0 15px;
+   font-size: 40px;
+   transition: .4s ease;
+}
+
+.contact-icons a:hover {
+   color: #09f7eb;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+   .info {
+      padding: 20px 5%;
+      width: 80%;
+      top: 30%; /* Adjust the top position for better visibility */
+   }
+
+   .info h1 {
+      font-size: 30px; /* Reduce the font size for mobile */
+   }
+
+   .info h3, .about-content p {
+      font-size: 16px;
+   }
+
+   /* Adjust the video banner to ensure it doesn't take up too much space */
+   .video-banner {
+      height: 25vh; /* Reduced height for better mobile view */
+   }
+
+   /* Make the header text more responsive */
+   .info h3 {
+      font-size: 18px; /* Reduce the size of h3 */
+   }
+
+   .info h1 {
+      font-size: 28px; /* Reduced size for the main heading */
+   }
+
+   /* Ensure the project gallery items are displayed well */
+   .projects-gallery {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .project-item {
+      width: 80%;
+      margin-bottom: 20px;
+   }
+
+   .shortcut-nav {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .shortcut-nav a {
+      margin-bottom: 10px;
+   }
+}
+
+/* Section Titles */
+.section-title h2 {
+   font-size: 40px;
+   color: #b31818;
+   text-align: center;
+   margin-bottom: 30px;
+   margin-top: 20px; /* Added margin-top to bring the title down */
+   -webkit-text-stroke: 0.5px #fdf9f9; /* Neon Orange outline */
+   text-transform: uppercase; /* Optional: Make text uppercase for style */
+   font-weight: bold; /* Optional: Make text bold */
+}
+
+.project-item h4 {
+   font-size: 28px;
+   color: #e6683b;
+   text-align: center;
+   margin-top: 30px;
+   -webkit-text-stroke: 0.5px #8f5806; /* Neon Orange outline */
+   text-transform: uppercase; /* Optional: Make text uppercase for style */
+   font-weight: bold; /* Optional: Make text bold */
+   text-decoration: none; /* Removes underline */
+}
+/* Mobile-Only Styles */
+@media screen and (max-width: 768px) {
+   /* Shortcut Navigation */
+   .shortcut-nav {
+      flex-direction: row; /* Make the shortcuts horizontal */
+      justify-content: center; /* Center align the shortcuts */
+      padding: 10px 0;
+   }
+
+   .shortcut-nav a {
+      font-size: 16px; /* Slightly smaller font size for better fit */
+      margin: 0 10px; /* Add spacing between links */
+   }
+
+   /* Info Section */
+   .info {
+      top: calc(16.5% ); /* Bring the info section up by 2cm */
+      padding: 10px 5%; /* Adjust padding for smaller screens */
+      width: 90%; /* Adjust width for mobile */
+   }
+
+   .info h1 {
+      font-size: 16px; /* Smaller font size for the main heading */
+   }
+
+   .info h3 {
+      font-size: 8px; /* Adjusted subheading font size */
+   }
+
+   /* Projects Gallery */
+   .projects-gallery {
+      flex-direction: column; /* Stack projects vertically for mobile */
+      align-items: center;
+   }
+
+   .project-item {
+      width: 80%; /* Reduce width for better spacing */
+      margin-bottom: 20px;
+   }
+
+   /* About and Contact Sections */
+   .about-content, .contact-form {
+      padding: 15px; /* Reduce padding for smaller screens */
+      font-size: 16px; /* Adjust text size for readability */
+   }
+
+   /* Section Titles */
+   .section-title h2 {
+      font-size: 30px; /* Reduce section title size for mobile */
+      margin-bottom: 20px;
+   }
+
+   /* Contact Icons */
+   .contact-icons {
+      flex-direction: row; /* Keep icons in a row */
+      justify-content: center;
+      margin-top: 15px;
+   }
+
+   .contact-icons a {
+      font-size: 30px; /* Adjust icon size for mobile */
+      margin: 0 10px; /* Add spacing between icons */
+   }
+}
+

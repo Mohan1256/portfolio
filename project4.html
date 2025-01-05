@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 4 - 3D Modeling Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pro4.css">
+    <style>
+        body {
+            background-image: url('pic/Backgrounds/bgt3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-page">
+        <div class="section-title">
+            <h2>3D Realistic forest model</h2>
+        </div>
+        <div class="project-details">
+            <p>This project is titled 3D Realistic Forest Model due to its use of realistic textures and detailed natural elements. The model was created as a learning exercise, inspired by a reference YouTube video. Through this process, I gained valuable experience in creating realistic textures, terrain, and trees.
+
+                While the tutorial used paid textures, I opted for free textures to achieve a similar level of realism. Additionally, I incorporated a few custom elements to give the model my personal touch. This project is significant to me as it helped me develop and refine my skills in crafting realistic 3D environments.</p> 
+            
+            <!-- Displaying each project image one by one -->
+            <div class="project-image">
+                <img src="pic/pro4/pro4(1).png" alt="First render of Project 4 showcasing basic layout">
+                <p class="image-description">The first step in this project was to create the landscape. While landscapes can be created manually using modifiers, I opted for a quicker and more efficient approach by using the A.N.T. Landscape Add-on. I experimented with the add-on's settings to achieve the desired terrain.
+
+                    To enhance the lighting, I adjusted the World Settings and added an HDRI image for realistic environmental lighting.
+                    
+                    For the trees, I used the Particle System:
+                    
+                    Set the particle type to Hair to distribute objects across the landscape.
+                    Created realistic tree models separately and organized them into a collection.
+                    Assigned the tree collection as the particle object, allowing the trees to populate the landscape procedurally.
+                    This workflow resulted in a natural-looking forest with dynamic lighting and a realistic terrain.</p>
+            </div>
+
+            <div class="project-image">
+                <img src="pic/pro4/pro4(2).png" alt="Project 4 with dynamic lighting and reflections">
+                <p class="image-description">In this model, texturing plays a crucial role in bringing the scene to life. To achieve a realistic appearance, I used two high-quality textures:
+
+                    Rock Texture: Applied to the mountainous areas to enhance the rugged, natural look.
+                    Grass Texture: Used for the ground to create a lush and vibrant forest floor.
+                    Simply applying textures isn’t enough; adjustments were made to the texture settings to achieve the desired level of realism. This involved fine-tuning parameters such as scale, roughness, and displacement within the Shader Editor.
+                    
+                    The image above illustrates the texturing nodes setup, showcasing the intricate workflow used to create a lifelike forest environment.</p>
+            </div>
+
+            <div class="project-image">
+                <img src="pic/pro4/pro4(3).png" alt="Final render with detailed textures and post-processing">
+                <p class="image-description">After rendering the image, I moved on to compositing to enhance the realism of the final output. While I'm still learning and exploring the concept of compositing, it has been a valuable part of my 3D modeling journey, helping me improve my skills every day.
+
+                    For this project:
+                    
+                    I experimented with denoising nodes to clean up the render and reduce noise.
+                    Tried adding mist effects for depth, but it didn’t work as intended, so I decided to turn off the mist in the final animation.
+                    Adjusted color variations to bring out the natural tones and vibrancy of the scene.
+                    Finally, connected everything to the output node to produce the final, realistic render.
+                    This step, despite its challenges, helped me understand the potential of compositing in enhancing the quality of my work.
+                    
+                    </p>
+            </div>
+            <div class="project-video">
+                <video controls>
+                    <source src="pic/videos/forest video.mp4" type="video/mp4">
+                    <source src="pic/videos/Forest Video2.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="image-description">For this model, I explored the process of rendering and animating large-scale scenes. While I’m still in the early stages of learning animation, this project has been a valuable step in my journey, teaching me new techniques every day.
+
+                    To render this large model efficiently, I discovered a way to render animations without relying on my own computer's components. (Feel free to ask if you'd like guidance on this process!)
+                    
+                    For the animation:
+                    
+                    I set the sequence to 150 frames, with a sample value of 64 per frame, to balance quality and rendering time.
+                    Rendering the animation took several days, but the results are promising.
+                    The video above showcases an early version of the animation. It’s not the final output, as I’m still working on refining the animation, optimizing camera angles, and achieving the best results. Once completed, I’ll update it with the finalized version.
+                </p>
+        </div>
+
+        <a href="index.html" class="back-to-home">Back to Home</a>
+    </div>
+</body>
+</html>

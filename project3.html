@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 3 - 3D Modeling Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pro3.css">
+    <style>
+        body {
+            background-image: url('pic/Backgrounds/bgt6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-page">
+        <div class="section-title">
+            <h2>3D Fantasy Castle</h2>
+        </div>
+        <div class="project-details">
+            <p>This project is titled Low Poly 3D City Model. The model was created using Geometry Nodes in Blender, which allowed for procedural creation of various elements. In this case, the Geometry Nodes were specifically used to generate the buildings, providing a streamlined and efficient way to create a detailed cityscape with a low poly aesthetic.</p> 
+            <!-- Displaying each project image one by one -->
+            <div class="project-image">
+                <img src="pic/pro3/pro3(1).png" alt="First render of Project 3 showcasing basic structure">
+                <p class="image-description">The buildings were created using default cube objects. The process begins with creating a plane and using the Particle System to distribute the cubes across it:
+
+                    Particle System Setup:
+                    
+                    Add a particle system to the plane and set it to Hair mode.
+                    Assign the cube as the object for the particle instances.
+                    Adjust the rotation settings, aligning them to the global Z-axis for proper orientation.
+                    Building Variations:
+                    
+                    This model features three distinct cube variations to represent different building types in the city. The cubes serve as the base geometry for the low poly buildings.
+                    Using this method ensures an efficient and uniform layout for the city's buildings while maintaining a low poly aesthetic.</p>
+            </div>
+
+            <div class="project-image">
+                <img src="pic/pro3/pro3(2).png" alt="Project 3 with advanced textures and lighting effects">
+                <p class="image-description">In this model, no texturing was applied in the Shader Editor. Instead, the colors for the buildings were directly assigned using Geometry Nodes. This approach keeps the process simple and efficient while allowing for a vibrant, low poly aesthetic.
+                    
+                    Lighting and Camera Setup:
+                    
+                    Sunlight was used to illuminate the scene, providing consistent and natural lighting across the model.
+                    The camera was set to Orthographic view to emphasize the isometric perspective, which is ideal for showcasing the city layout.
+                    Scalability:
+                    The city model is fully procedural, allowing for easy expansion. By scaling the base plane, the buildings automatically adjust and fill the new area, making it effortless to create a larger cityscape.
+                    
+                    </p>
+            </div>
+
+            <div class="project-image">
+                <img src="pic/pro3/pro3(3).png" alt="Final render of Project 3 with polished textures and effects">
+                <p class="image-description">In this model, various Geometry Nodes were utilized to create the procedural elements shown in the image above. These nodes allowed for efficient modeling and customization, enabling the seamless generation of buildings and their attributes.
+
+                    The use of Geometry Nodes streamlined the process and provided flexibility for expanding or modifying the model, as demonstrated in the creation of the cityscape.</p>
+            </div>
+
+            <div class="project-image">
+                <img src="pic/projects/project3.png" alt="Alternative angle of Project 3">
+                <p class="image-description">To complete the model for rendering, I finished setting up the lighting, adjusted the camera placement, and configured the render settings in Cycles for optimal output. These steps ensured the scene was well-lit, visually appealing, and properly framed.
+
+                    The image above showcases the final render, highlighting the procedural low poly cityscape with its vibrant colors, clean lighting, and a cohesive composition.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-to-home">Back to Home</a>
+    </div>
+</body>
+</html>
