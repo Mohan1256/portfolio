@@ -295,11 +295,11 @@ body {
 /* Section Titles */
 .section-title h2 {
    font-size: 40px;
-   color: #b31818;
+   color: #fc0909;
    text-align: center;
    margin-bottom: 30px;
    margin-top: 20px; /* Added margin-top to bring the title down */
-   -webkit-text-stroke: 0.5px #fdf9f9; /* Neon Orange outline */
+   -webkit-text-stroke: 0.5px #f70bff46; /* Neon Orange outline */
    text-transform: uppercase; /* Optional: Make text uppercase for style */
    font-weight: bold; /* Optional: Make text bold */
 }
