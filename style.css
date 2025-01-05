@@ -336,11 +336,11 @@ body {
    }
 
    .info h1 {
-      font-size: 16px; /* Smaller font size for the main heading */
+      font-size: 18px; /* Smaller font size for the main heading */
    }
 
    .info h3 {
-      font-size: 8px; /* Adjusted subheading font size */
+      font-size: 9px; /* Adjusted subheading font size */
    }
 
    /* Projects Gallery */
